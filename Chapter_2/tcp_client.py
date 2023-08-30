@@ -11,7 +11,7 @@ client.connect((target_host, target_port))
 
 # Sending data
 client.send(b"GET / HTTP/1.1\r\nHost: example.com\r\n\r\n")
-# Adding the prefix "b" to a string converts it to bytes 
+# Adding the prefix "b" to convert string to bytes 
 
 # Receiving data
 respone = client.recv(4096)
